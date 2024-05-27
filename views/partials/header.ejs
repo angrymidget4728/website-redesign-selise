@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="./styles/layout.css">
-    <title>
-        
-        <%= navlinksMain[currentUrl] %> | Selise Digital Platforms
-    </title>
-</head>
+        <link rel="stylesheet" href="./styles/layout.css">
+        <title>
+            
+            <%= navlinksMain[currentUrl] %> | Selise Digital Platforms
+        </title>
+    </head>
+    
+<% var whatWeDo = ['/our-services', '/business-functions', '/industry-expertise', '/technology', '/saas'] %>
 
 <body>
     <header>
@@ -20,10 +21,13 @@
             <ul class="navlinks">
                 <li class="<%= currentUrl === '/' ? 'active-navlink' : '' %>"><a href="/">HOME</a></li>
                 <li class="<%= currentUrl === '/who-we-are' ? 'active-navlink' : '' %>"><a href="/who-we-are">WHO WE ARE</a></li>
-                <li class="<%= ['/our-services', '/business-functions'].includes(currentUrl)  ? 'active-navlink' : '' %>"><a>WHAT WE DO</a>
+                <li class="<%= whatWeDo.includes(currentUrl)  ? 'active-navlink' : '' %>"><a>WHAT WE DO</a>
                     <ul class="navsublinks">
-                        <li class="<%= currentUrl === '/our-services' ? 'active-navlink' : '' %>"><a href="/our-services">Our Services</a></li>
-                        <li class="<%= currentUrl === '/business-functions' ? 'active-navlink' : '' %>"><a href="/business-functions">Business Functions</a></li>
+                        <li class="<%= currentUrl === whatWeDo[0] ? 'active-navlink' : '' %>"><a href=<%= whatWeDo[0] %>>Our Services</a></li>
+                        <li class="<%= currentUrl === whatWeDo[1] ? 'active-navlink' : '' %>"><a href=<%= whatWeDo[1] %>>Business Functions</a></li>
+                        <li class="<%= currentUrl === whatWeDo[2] ? 'active-navlink' : '' %>"><a href=<%= whatWeDo[2] %>>Industry Expertise</a></li>
+                        <li class="<%= currentUrl === whatWeDo[3] ? 'active-navlink' : '' %>"><a href=<%= whatWeDo[3] %>>Technlogy</a></li>
+                        <li class="<%= currentUrl === whatWeDo[4] ? 'active-navlink' : '' %>"><a href=<%= whatWeDo[4] %>>Saas</a></li>
                     </ul>
                 </li>
                 <li><a>INSIGHTS</a></li>

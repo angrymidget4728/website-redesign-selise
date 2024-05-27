@@ -9,6 +9,9 @@ const navlinksMain = {
     whatWeDo: {
         "/our-services": "Our Services",
         "/business-functions": "Business Functions",
+        '/industry-expertise': "Industry Expertise",
+        '/technology': "Technology",
+        '/saas': "SaaS"
     }
 }
 
@@ -39,15 +42,15 @@ app.get("/business-functions", (req, res) => {
 })
 
 app.get("/industry-expertise", (req, res) => {
-    res.render("industry-expertise.ejs", { title: "Industry Expertise" });
+    res.render("industry-expertise.ejs", { navlinksMain: navlinksMain.whatWeDo, currentUrl: req.url });
 })
 
 app.get("/technology", (req, res) => {
-    res.render("technology.ejs", { title: "Technology" });
+    res.render("technology.ejs", { navlinksMain: navlinksMain.whatWeDo, currentUrl: req.url });
 })
 
 app.get("/saas", (req, res) => {
-    res.render("saas.ejs", { title: "SaaS" });
+    res.render("saas.ejs", { navlinksMain: navlinksMain.whatWeDo, currentUrl: req.url });
 })
 
 app.listen(port, () => {
