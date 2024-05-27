@@ -14,11 +14,11 @@
     <header>
         <a href="/"><img class="logo-small" src="/images/logo_small.png" alt="logo"></a>
         <nav>
-            <ul class="navlinks">
+            <ul class="navlinks nobullets">
                 <li class="<%= currentUrl === '/' ? 'active-navlink' : '' %>"><a href="/">HOME</a></li>
                 <li class="<%= currentUrl === '/who-we-are' ? 'active-navlink' : '' %>"><a href="/who-we-are">WHO WE ARE</a></li>
                 <li class="<%= whatWeDo.includes(currentUrl)  ? 'active-navlink' : '' %>"><a>WHAT WE DO</a>
-                    <ul class="navsublinks">
+                    <ul class="navsublinks nobullets">
                         <li class="<%= currentUrl === whatWeDo[0] ? 'active-navlink' : '' %>"><a href=<%= whatWeDo[0] %>>Our Services</a></li>
                         <li class="<%= currentUrl === whatWeDo[1] ? 'active-navlink' : '' %>"><a href=<%= whatWeDo[1] %>>Business Functions</a></li>
                         <li class="<%= currentUrl === whatWeDo[2] ? 'active-navlink' : '' %>"><a href=<%= whatWeDo[2] %>>Industry Expertise</a></li>
