@@ -1,11 +1,20 @@
 <%- include("./partials/header.ejs", {navlinksMain: navlinksMain}) %>
-    <h1>Test <%= navlinksMain[currentUrl] %> page</h1>
-    <section id="hero"></section>
-    <section id="what-we-do"></section>
-    <section id="selected-customers"></section>
-    <section id="ordermonkey"></section>
-    <section id="strategic-partners"></section>
-    <section id="latest-updates"></section>
-    <section id="sme-blogs"></section>
-    <section id="customer-case-studies"></section>
+    <main>
+        <section id="home-hero">
+            <div class="hero-bg">
+                <div class="section-content home-hero-content">
+                    <div class="hero-subtitle home-hero-subtitle">We are a global organisation of</div>
+                    <div class="hero-title home-hero-title">Digital Consultants, Software & UX Engineers</div>
+                    <div class="hero-subtitle home-hero-subtitle">We deliver and manage outcome-driven Digital Platforms</div>
+                </div>
+            </div>
+        </section>
+        <section id="what-we-do"></section>
+        <section id="selected-customers"></section>
+        <section id="ordermonkey"></section>
+        <section id="strategic-partners"></section>
+        <section id="latest-updates"></section>
+        <section id="sme-blogs"></section>
+        <section id="customer-case-studies"></section>
+    </main>
 <%- include("./partials/footer.ejs") %>
