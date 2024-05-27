@@ -20,52 +20,49 @@ header {
 .navlinks {
     list-style: none;
     display: flex;
-}
-
-.navlinks li {
     font-weight: bold;
     color: #424242;
-    padding: 20px;
 }
 
-.navlinks li:hover {
-    background-color: #ECECEC;
-}
 
-.navlinks li a {
+.navlinks a {
+    display: block;
     text-decoration: none;
+    padding: 20px;
     color: inherit;
 }
 
-
-li.active-navlink,
-li.active-navlink:hover {
-    background-color: #0053A2;
-    color: white;
+.navlinks a:hover {
+    background-color: #ECECEC;
 }
 
-.unclickable {
-    pointer-events: none;
+.active-navlink>a,
+.active-navlink>a:hover {
+    background-color: #0053A2;
+    color: white;
 }
 
 .navsublinks {
     list-style: none;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: -20px;
-    visibility: hidden;
-}
-
-.navsublinks li {
-    padding: 20px;
+    display: none;
 }
 
 li:hover ul.navsublinks {
-    visibility: visible;
+    display: block;
 }
 
-.navsublinks li a {
+.navsublinks>li>a {
     text-decoration: none;
+    color: #424242;
+}
+
+.navsublinks>li>a:hover {
+    background-color: #ECECEC;
+}
+
+.navsublinks>.active-navlink>a {
+    background-color: white;
+    color: #0053A2;
+    text-decoration: underline;
 }
