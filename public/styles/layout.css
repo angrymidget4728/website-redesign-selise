@@ -12,8 +12,8 @@
 
 .nobullets a {
     text-decoration: none;
-    text-wrap: nowrap;
-    overflow: hidden;
+    /* text-wrap: nowrap;
+    overflow: hidden; */
 }
 
 /* HEADER */
@@ -28,6 +28,7 @@ header {
     right: 0;
     padding: 0px 3.33vw;
     background-color: white;
+    height: 64px;
 }
 
 
@@ -44,11 +45,22 @@ header {
     font-size: 0.75rem;
 }
 
+.navlinks>li {
+    background-color: teal;
+    height: 64px;
+    display: flex;
+    align-items: stretch;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+
 
 .navlinks a {
     display: block;
-    padding: 24px 20px;
+    padding-inline: 1.04vw;
     color: inherit;
+    /* flex-grow: 1; */
+    align-self: center;
 }
 
 .navlinks a:hover {
