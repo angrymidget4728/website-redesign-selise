@@ -1,22 +1,22 @@
-main {
-    padding-top: 63px;
-}
+/* main {
+    padding-top: 3.9rem;
+} */
 
 .section-content {
-    padding: 0px 64px;
+    padding: 0px 3.33vw;
 }
 
 
 /* hero section */
 
 .hero-bg {
-    width: 100vw;
     height: 720px;
     /* background-color: #3153a4; */
     background-color: #385B7D;
 }
 
 .home-hero-title {
+    display: inline-block;
     background-color: white;
     color: #00388A;
     font-weight: 900;
@@ -27,6 +27,8 @@ main {
 }
 
 .home-hero-subtitle {
+    display: inline-block;
+    width: 50vw;
     color: white;
     font-weight: 800;
     font-size: 1.75rem;

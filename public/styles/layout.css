@@ -12,6 +12,8 @@
 
 .nobullets a {
     text-decoration: none;
+    text-wrap: nowrap;
+    overflow: hidden;
 }
 
 /* HEADER */
@@ -24,7 +26,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0px 60px;
+    padding: 0px 3.33vw;
     background-color: white;
 }
 
@@ -89,7 +91,7 @@ li:hover ul.navsublinks {
 
 footer {
     background-color: #464646;
-    padding: 32px 64px;
+    padding: 32px 3.33vw;
     color: white;
 }
 
@@ -136,4 +138,9 @@ footer a {
 
 .footer-tos div {
     gap: 24px;
+}
+
+.navbar-padding {
+    background-color: teal;
+    height: 3.9rem;
 }
