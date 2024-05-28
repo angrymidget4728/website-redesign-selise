@@ -51,8 +51,8 @@
     background-color: #F6F6F6;
 }
 
-#what-we-do,
-#selected-customers {
+#selected-customers,
+#strategic-partners {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -113,8 +113,12 @@
     /* padding-top: 32px; */
 }
 
-#what-we-do div.section-content {
+#selected-customers div.section-content {
     display: flex;
     flex-direction: column;
     gap: 32px;
+}
+
+.slides-right {
+    text-align: right;
 }
