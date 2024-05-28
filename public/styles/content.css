@@ -94,6 +94,7 @@
     justify-content: center;
     align-items: center;
     margin: 20px, 1.5vw;
+    flex-shrink: 0;
 }
 
 .sliding-arrow {
@@ -104,13 +105,13 @@
     font-weight: 900;
     display: flex;
     align-items: center;
+    padding: 1.05vw;
 }
 
 .slides-index {
     display: flex;
     justify-content: center;
-    /* background-color: teal; */
-    /* padding-top: 32px; */
+    gap: 1rem;
 }
 
 #selected-customers div.section-content {
@@ -121,4 +122,39 @@
 
 .slides-right {
     text-align: right;
+}
+
+.slide-button {
+    background-color: #D9D9D9;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+}
+
+/* Home articles section */
+
+.article-section-title {
+    font-size: 3rem;
+    text-decoration: underline;
+    color: #424242;
+    font-weight: bold;
+}
+
+.article-section-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article-section-items {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 5.2vw;
+}
+
+.article-card-home {
+    width: 250px;
+    height: 350px;
+    border-radius: 1rem;
+    background-color: #D9D9D9;
 }
